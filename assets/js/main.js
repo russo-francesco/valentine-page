@@ -2,28 +2,28 @@
 
 const CONFIG = {
   texts: {
-    name: "Sara", // <-- cambia qui
+    name: "Sara",                                                // inserire nome ragazza, oppure lasciarlo vuoto
 
-    titleTemplate: "{name}, will you be my Valentine?",
-    subtitle: "Choose wisely.",
-    hint: "“No” seems a bit shy 😈"
+    titleTemplate: "{name}, will you be my Valentine?",          // titolo
+    subtitle: "Choose wisely.",                                  // sottotitolo
+    hint: "“No” seems a bit shy 😈"                              // messaggio al NO
   },
 
   yesGrowth: {
-    step: 0.05,
-    max: 2.2
+    step: 0.05,                                                   // incremento crescita YES
+    max: 2.2                                                      // dimensione massima YES
   },
 
   avoid: {
-    influenceRadius: 170,
-    dangerRadius: 90,
+    influenceRadius: 170,                                         // raggio di attivazione spostamento NO
+    dangerRadius: 90,                                             // distanza teleport NO
     edgePadding: 14,
     minDistanceFromPointer: 150,
     minGapFromYes: 14,
     teleportCooldownMs: 180,
     teleportTries: 26,
-    maxVelocity: 10,
-    friction: 0.86
+    maxVelocity: 10,                                               // velocità NO
+    friction: 0.86                                                 // aggressività movimento NO
   },
 
   audio: {
