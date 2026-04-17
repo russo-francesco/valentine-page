@@ -4,23 +4,35 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Valentine</title>
+  <meta name="description" content="Interactive Valentine page built with HTML, CSS and vanilla JavaScript." />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-
 <body>
   <main class="app">
-    <section class="card">
-      <h1>Will you be my Valentine?</h1>
+    <section class="card" aria-label="Valentine card">
+      <div class="emoji" aria-hidden="true">💘</div>
 
-      <div class="stage">
-        <button class="btn yes" id="yesBtn">YES</button>
-        <button class="btn no" id="noBtn">NO</button>
+      <h1 class="title" id="title">Will you be my Valentine?</h1>
+      <p class="subtitle" id="subtitle">Choose wisely.</p>
+
+      <div class="stage" id="stage">
+        <button class="btn yes" id="yesBtn" type="button">YES</button>
+        <button class="btn no" id="noBtn" type="button" aria-label="No">NO</button>
+        <p class="hint" id="hint">“No” seems a bit shy 😈</p>
       </div>
 
-      <div id="result" hidden>
-        <h2>YAY! 🎉</h2>
-        <img src="assets/img/yay.gif" width="300" />
+      <div class="result" id="result" hidden>
+        <div class="result-title">YAY! 🎉</div>
+        <img class="result-gif" src="assets/img/yay.gif" alt="Celebration GIF" />
       </div>
+
+      <div class="footer">
+        <button class="ghost" id="resetBtn" type="button" hidden>Reset</button>
+      </div>
+
+      <audio id="bgm" preload="auto">
+        <source src="assets/audio/valentines.mp3" type="audio/mpeg" />
+      </audio>
     </section>
   </main>
 
