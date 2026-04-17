@@ -55,6 +55,8 @@ texts: {
   hint: "“No” seems a bit shy 😈"
 }
 
+---
+
 - Behavior:
   - If name is filled → AAAA, will you be my Valentine?
   - If empty → Will you be my Valentine?
