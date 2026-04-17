@@ -1,7 +1,7 @@
 "use strict";
 
 texts: {
-  name: "Sara",              // nome ragazza
+  name: "Sara",              // nome ragazza o vuoto
   titleTemplate: "{name}, will you be my Valentine?",
   subtitle: "Choose wisely.",
   hint: "“No” seems a bit shy 😈"
