@@ -1,4 +1,4 @@
-👉 https://ciccio264.github.io/valentine-page/
+👉 https://russo-francesco.github.io/valentine-page/
 
 ## ⚙️ Customization (IMPORTANT)
 Prima di inviare il link controllare/verificare/modificare i seguenti parametri nel file assets/js/main.js:
