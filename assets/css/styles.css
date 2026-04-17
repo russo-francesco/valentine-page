@@ -68,6 +68,7 @@ body {
   line-height: 1.06;
   letter-spacing: -0.03em;
   font-weight: 800;
+  word-break: break-word;
 }
 
 .subtitle {
@@ -183,6 +184,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  animation: fadeIn 0.35s ease;
 }
 
 .result-title {
@@ -218,6 +220,17 @@ body {
   padding: 10px 16px;
   font-weight: 700;
   cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 640px) {
