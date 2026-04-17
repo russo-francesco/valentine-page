@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: pink;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.stage {
+  position: relative;
+  height: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.yes {
+  background: hotpink;
+  color: white;
+}
+
+.no {
+  position: absolute;
+  left: 200px;
+  background: lightgray;
+}
