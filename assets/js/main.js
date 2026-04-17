@@ -66,10 +66,18 @@ function init() {
 }
 
 function applyTexts() {
-  el.title.textContent = CONFIG.texts.title;
+  const name = CONFIG.texts.name?.trim();
+
+  if (name && name.length > 0) {
+    el.title.textContent = CONFIG.texts.titleTemplate.replace("{name}", name);
+  } else {
+    el.title.textContent = "Will you be my Valentine?";
+  }
+
   el.subtitle.textContent = CONFIG.texts.subtitle;
   el.hint.textContent = CONFIG.texts.hint;
   el.hint.hidden = true; // nascosta all'inizio
+
   updateYesScale();
 }
 
