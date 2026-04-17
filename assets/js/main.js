@@ -1,11 +1,11 @@
 "use strict";
 
-const CONFIG = {
-  texts: {
-    title: "Will you be my Valentine?",      // titolo
-    subtitle: "Choose wisely.",              // sottotitolo
-    hint: "“No” seems a bit shy 😈"          // messaggio al NO
-  },
+texts: {
+  name: "Sara",              // nome ragazza
+  titleTemplate: "{name}, will you be my Valentine?",
+  subtitle: "Choose wisely.",
+  hint: "“No” seems a bit shy 😈"
+},
 
   yesGrowth: {
     step: 0.05,   // crescita YES
